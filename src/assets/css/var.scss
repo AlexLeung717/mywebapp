@@ -1,0 +1,9 @@
+
+
+$bgColor: #06c1ae;
+
+@mixin textOverflow() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

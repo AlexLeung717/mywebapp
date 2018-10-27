@@ -6,10 +6,30 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// css
+import './assets/css/base.css'
+import './assets/css/iconfont.css'
+
+// js
+import './assets/js/webapp.js'
+
+// axios
+import axios from 'axios'
+Vue.prototype.$http = axios;
+
+// vuex
+import store from './store/index.js'
+
+// swiper
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
